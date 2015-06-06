@@ -1,0 +1,21 @@
+<template name="Clothes">
+
+	{{#if clothes }}
+		{{#each clothes}}
+			{{>ClothesItem}}
+		{{/each}}
+	{{/if}}
+</template>
+
+
+
+
+
+<template name="ClothesItem">
+	<div>
+		<img src="{{img}}" >
+		<p>{{name}}</p>
+		<p>{{price}}</p>
+	</div>
+</template>
+
