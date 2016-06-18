@@ -1,0 +1,33 @@
+ li {
+    list-style-type: none;
+}
+.leftMenu{
+	position: fixed;
+	margin-left: 35px;
+}
+ol.txtHovLeftMenu a {
+	font-family:VERDANA;
+	font-size: 12px;
+}
+ol.txtHovLeftMenu a:hover {
+    color: #9e9e9e; /* Цвет текста активного пункта */
+    text-shadow: white 0px 1px 0, white -1px -1px 0, 
+                 white -1px 1px 0, white 1px -1px 0;
+   }
+
+ol.txtHovLeftMenu li{
+	min-height: 25px;
+
+}
+
+.leftMenuCat{
+	font-family:VERDANA;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.clothItemsMrg{
+	margin-left: 108px !important ;
+}
+.clothItemsMrgSec{
+	margin-left: 70px !important ;
+}

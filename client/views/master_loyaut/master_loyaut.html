@@ -1,13 +1,6 @@
-<head>
- <title>
- 	For You
- </title>
-</head>
-<body>
-
-
-</body>
 <template name="MasterLayout">
 	{{>yield region="TopMenu"}}
 	{{>yield}}
+	{{> sAlert}}
+	{{>yield region="Footer"}}
 </template>

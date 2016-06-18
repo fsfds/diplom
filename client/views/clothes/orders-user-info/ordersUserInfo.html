@@ -1,0 +1,86 @@
+<template name="ordersUserInfo">
+	<div class="row mrgTop">
+		<div class="txtVisb col s1">
+			q
+		</div>
+		<div class="col s6">
+			{{#each order.items}}
+				<div class="firstOrdersBlock imgOrdersList">
+						<div id="parent" class="imgOrdersSizes">
+								<img id="child" class="imgOrdersViev"  src="{{qwe}}">
+						</div>
+						<p class="textOrdersViev">Cloth № {{clothID}}</p>
+						<p class="textOrdersViev">Size {{size}} </p> 
+				</div>
+			{{/each}}
+		</div>
+		<div class="col s5 ">
+			<div class="secOrdersBlock">
+				<div class="row">
+					<div class="col s6">
+						<p class="textOrdersInf">Order № </p>
+					</div>
+					<div class="col s6">
+						<p class="textOrdersInf">{{order._id}}</p>
+					</div>
+					<div class="col s6">
+						<p class="textOrdersInf">Last name </p>
+					</div>
+					<div class="col s6">
+						<p class="textOrdersInf">{{order.lastName}}</p>
+					</div>
+					<div class="col s6">
+						<p class="textOrdersInf">First name </p>
+					</div>
+					<div class="col s6">
+						<p class="textOrdersInf">{{order.firstName}}</p>
+					</div>
+					<div class="col s6">
+						<p class="textOrdersInf">Phone </p>
+					</div>
+					<div class="col s6">
+						<p class="textOrdersInf">{{order.phone}}</p>
+					</div>
+					<div class="col s6">
+						<p class="textOrdersInf">Street </p>
+					</div>
+					<div class="col s6">
+						<p class="textOrdersInf">{{order.street}}</p>
+					</div>
+					<div class="col s6">
+						<p class="textOrdersInf">ZIP </p>
+					</div>
+					<div class="col s6">
+						<p class="textOrdersInf">{{order.zip}}</p>
+					</div>
+					<div class="col s6">
+						<p class="textOrdersInf">City </p>
+					</div>
+					<div class="col s6">
+						<p class="textOrdersInf">{{order.city}}</p>
+					</div>
+					<div class="col s6">
+						<p class="textOrdersInf">Country </p>
+					</div>
+					<div class="col s6">
+						<p class="textOrdersInf">{{order.country}}</p>
+					</div>
+					<div class="col s6">
+						<p class="textOrdersInf">Delivery type </p>
+					</div>
+					<div class="col s6">
+						<p class="textOrdersInf">{{order.delivery}}</p>
+					</div>
+					<!-- <p class="textOrdersViev">Last name {{order.lastName}}</p>
+					<p class="textOrdersViev">First name {{order.firstName}}</p>
+					<p class="textOrdersViev">Phone {{order.phone}}</p>
+					<p class="textOrdersViev">Street {{order.street}}</p>
+					<p class="textOrdersViev">ZIP {{order.zip}}</p>
+					<p class="textOrdersViev">City {{order.city}}</p>
+					<p class="textOrdersViev">Country {{order.country}}</p> -->
+					<button type="submit" class="orersBtn  btn btn-info fullbutton " id="orderDone">Order done</button>
+				</div>	
+			</div>
+		</div>
+	</div>
+</template>

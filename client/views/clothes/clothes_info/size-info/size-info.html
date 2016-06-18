@@ -1,0 +1,476 @@
+<template  name="sizeInfo">
+	<div id="modal1" class=" modal modal-fixed-footer">
+		<div id="style-1" class=" scrollbar row sizeBox">
+		{{#if man}}
+		    <div class="row"> 
+		    <div class="col s6">  
+				<h4 class="ss">	
+					SIZING GUIDE. MAN
+				</h4>
+				
+				<table >
+					<tbody>
+						<tr>
+							<th class="sizeTxtCenter" colspan="8">
+								COATS, SPORTS, PUFFER JACKETS ... 
+							</th>
+						</tr>
+						<tr class="sizeTxt">
+							<th class=" sizeTxtCenter">
+								SIZE
+							</th>
+							<th>S</th>
+							<th>M</th>
+							<th>L</th>
+							<th>XL</th>
+							<th>XXL</th>
+							<th></th>
+							<th></th>
+						</tr>
+						<tr class="sizeTxt">
+							<td class="sizeTxtCenter">
+								Bust (Cm)
+							</td>
+							<td>90/94</td>
+							<td>96/100</td>
+							<td>102/106</td>
+							<td>108/112</td>
+							<td>114/118</td>
+							<td></td>
+							<td></td>
+						</tr>
+
+						<tr >
+							<th class="sizeTxtCenter" colspan="8">
+								BLAZER, SUMMER JACKETS ...
+							</th>
+						</tr>
+						<tr class="sizeTxt">
+							<th class="sizeTxtCenter">
+								SIZE
+							</th>
+							<th>46</th>
+							<th>48</th>
+							<th>50</th>
+							<th>52</th>
+							<th>54</th>
+							<th>56</th>
+							<th></th>
+						</tr>
+						<tr class="sizeTxt">
+							<td class="sizeTxtCenter">
+								Chest (Cm)
+							</td>
+							<td>93/95</td>
+							<td>97/99</td>
+							<td>101/103</td>
+							<td>105/107</td>
+							<td>109/111</td>
+							<td>113/115</td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<th class="sizeTxtCenter" colspan="8">
+								TROUSERS, JEANS, BERMUDAS ...
+							</th>
+						</tr>
+						<tr class="sizeTxt">
+							<th class="sizeTxtCenter">
+								SIZE
+							</th>
+							<th>36</th>
+							<th>38</th>
+							<th>40</th>
+							<th>42</th>
+							<th>44</th>
+							<th>46</th>
+							<th></th>
+						</tr>
+						<tr class="sizeTxt">
+							<td class="sizeTxtCenter">
+								Waist (Cm)
+							</td>
+							<td>79/81</td>
+							<td>83/85</td>
+							<td>87/89</td>
+							<td>91/93</td>
+							<td>95/97</td>
+							<td>99/101</td>
+							<td></td>
+						</tr>
+
+						<tr >
+							<th  class="sizeTxtCenter" colspan="8">
+								SIRTS, JERSEY, CARDIGAN, SWEASHIRTS ...
+							</th>
+						</tr>
+						<tr class="sizeTxt">
+							<th class="sizeTxtCenter">
+								SIZE
+							</th>
+							<th>S</th>
+							<th>M</th>
+							<th>L</th>
+							<th>XL</th>
+							<th>XXL</th>
+							<th></th>
+							<th></th>
+						</tr>
+						<tr class="sizeTxt">
+							<td class="sizeTxtCenter">
+								Waist (Cm)
+							</td>
+							<td>90/94</td>
+							<td>96/100</td>
+							<td>102/106</td>
+							<td>108/112</td>
+							<td>114/118</td>
+							<td></td>
+							<td></td>
+						</tr>
+
+
+						<tr >
+							<th class="sizeTxtCenter" colspan="8">
+								T-SHIRTS, POLOS ...
+							</th>
+						</tr>
+						<tr class="sizeTxt">
+							<th class="sizeTxtCenter">
+								SIZE
+							</th>
+							<th>XS</th>
+							<th>S</th>
+							<th>M</th>
+							<th>L</th>
+							<th>XL</th>
+							<th>XXL</th>
+							<th></th>
+						</tr>
+						<tr class="sizeTxt">
+							<td class="sizeTxtCenter">
+								Chest (Cm)
+							</td>
+							<td>89/91</td>
+							<td>93/95</td>
+							<td>97/99</td>
+							<td>101/103</td>
+							<td>105/107</td>
+							<td>109/111</td>
+							<td></td>
+						</tr>
+
+
+
+						<tr >
+							<th class="sizeTxtCenter" colspan="8">
+								SHOES(STANDARD SIZING)
+							</th>
+						</tr>
+						<tr class="sizeTxt">
+							<th class="sizeTxtCenter">
+								SIZE
+							</th>
+							<th>40</th>
+							<th>41</th>
+							<th>42</th>
+							<th>43</th>
+							<th>44</th>
+							<th>45</th>
+							<th></th>
+						</tr>
+						<tr class="sizeTxt">
+							<td class="sizeTxtCenter">Cm</td>
+							<td>25,54</td>
+							<td>26,18</td>
+							<td>26,82</td>
+							<td>27,46</td>
+							<td>28,1</td>
+							<td>28,74</td>
+							<td></td>
+						</tr>
+
+
+
+						<tr >
+							<th class="sizeTxtCenter" colspan="8">
+								SHOES(DOUBLE SIZIG)
+							</th>
+						</tr>
+						<tr class="sizeTxt">
+							<th class="sizeTxtCenter">
+								LETTER
+							</th>
+							<th>S</th>
+							<th>M</th>
+							<th>L</th>
+							<th>XL</th>
+							<th></th>
+							<th></th>
+							<th></th>
+						</tr>
+
+						<tr class="sizeTxt">
+							<th class="sizeTxtCenter">
+								SIZE
+							</th>
+							<th>40</th>
+							<th>41/42</th>
+							<th>43/44</th>
+							<th>45</th>
+							<th></th>
+							<th></th>
+							<th></th>
+						</tr>
+						
+						<tr class="sizeTxt">
+							<td class="sizeTxtCenter">Cm</td>
+							<td>25,54</td>
+							<td>26,18</td>
+							<td>27,46</td>
+							<td>28,74</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+
+
+					</tbody>
+				</table>
+				</div>
+			    <div class="col s5">
+			      		<img src="/size_info_img/manSize.jpg">
+			    </div>
+			</div>
+			{{/if}}
+		
+			{{#if woman}}
+			<div class="row"> 
+		    <div class="col s6">  
+				<h4 class="ss">
+					SIZING GUIDE. GIRLS
+				</h4>
+				<table >
+					<tbody>
+						<tr>
+							<th class="sizeTxtCenter" colspan="8">
+								TOP(CM)
+							</th>
+						</tr>
+						<tr class="sizeTxt">
+							<th class="sizeTxtCenter">
+								SIZE
+							</th>
+							<th>XS</th>
+							<th>S</th>
+							<th>M</th>
+							<th>L</th>
+							<th>XL</th>
+							<th></th>
+							<th></th>
+						</tr>
+						<tr class="sizeTxt">
+							<td class="sizeTxtCenter">
+								Bust
+							</td>
+							<td>80</td>
+							<td>84</td>
+							<td>88</td>
+							<td>94</td>
+							<td>98</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr class="sizeTxt">
+							<td class="sizeTxtCenter">
+								Waist (Cm)
+							</td>
+							<td>58</td>
+							<td>62</td>
+							<td>66</td>
+							<td>72</td>
+							<td>76</td>
+							<td></td>
+							<td></td>
+						</tr>
+
+						<tr >
+							<th class="sizeTxtCenter" colspan="8">
+								BOTTOM(IN)
+							</th>
+						</tr>
+						<tr class="sizeTxt">
+							<th class="sizeTxtCenter">
+								SIZE
+							</th>
+							<th>XS</th>
+							<th>S</th>
+							<th>M</th>
+							<th>L</th>
+							<th>XL</th>
+							<th></th>
+							<th></th>
+						</tr>
+						<tr class="sizeTxt">
+							<td class="sizeTxtCenter">
+								Hips (Cm)
+							</td>
+							<td>80</td>
+							<td>86</td>
+							<td>92</td>
+							<td>98</td>
+							<td>102</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr class="sizeTxt">
+							<th class="sizeTxtCenter">
+								SIZE
+							</th>
+							<th>34</th>
+							<th>36</th>
+							<th>38</th>
+							<th>40</th>
+							<th>42</th>
+							<th>44</th>
+							<th>46</th>
+						</tr>
+						<tr class="sizeTxt">
+							<td class="sizeTxtCenter">
+								Hips (Cm)
+							</td>
+							<td>84</td>
+							<td>88</td>
+							<td>92</td>
+							<td>96</td>
+							<td>100</td>
+							<td>104</td>
+							<td>108</td>
+						</tr>
+
+						<tr >
+							<th class="sizeTxtCenter" colspan="8">
+								DRESSES(IN)
+							</th>
+						</tr>
+						<tr class="sizeTxt">
+							<th class="sizeTxtCenter">
+								SIZE
+							</th>
+							<th>XS</th>
+							<th>S</th>
+							<th>M</th>
+							<th>L</th>
+							<th>XL</th>
+							<th></th>
+							<th></th>
+						</tr>
+						<tr class="sizeTxt">
+							<td class="sizeTxtCenter">
+								Bust (Cm)
+							</td>
+							<td>80</td>
+							<td>84</td>
+							<td>88</td>
+							<td>94</td>
+							<td>98</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr class="sizeTxt">
+							<td class="sizeTxtCenter">
+								Hips (Cm)
+							</td>
+							<td>84</td>
+							<td>88</td>
+							<td>92</td>
+							<td>98</td>
+							<td>102</td>
+							<td></td>
+							<td></td>
+						</tr>
+
+						<tr >
+							<th  class="sizeTxtCenter" colspan="8">
+								SHOES(STANDART SIZING)
+							</th>
+						</tr>
+						<tr class="sizeTxt">
+							<th class="sizeTxtCenter">
+								SIZE
+							</th>
+							<th>36</th>
+							<th>37</th>
+							<th>38</th>
+							<th>39</th>
+							<th>40</th>
+							<th>41</th>
+							<th></th>
+						</tr>
+						<tr class="sizeTxt">
+							<td class="sizeTxtCenter">
+								Cm 
+							</td>
+							<td>22,99</td>
+							<td>23,63</td>
+							<td>24,27</td>
+							<td>24,9</td>
+							<td>25,54</td>
+							<td>26,18</td>
+							<td></td>
+						</tr>
+
+
+						<tr >
+							<th class="sizeTxtCenter" colspan="8">
+								SHOES(DOUBLE SIZING)
+							</th>
+						</tr>
+						<tr class="sizeTxt">
+							<th class="sizeTxtCenter">
+								SIZE
+							</th>
+							<th>S</th>
+							<th>M</th>
+							<th>L</th>
+							<th></th>
+							<th></th>
+							<th></th>
+							<th></th>
+						</tr>
+						<tr class="sizeTxt">
+							<td class="sizeTxtCenter">
+								Size
+							</td>
+							<td>36/37</td>
+							<td>38/39</td>
+							<td>40/41</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr class="sizeTxt">
+							<td class="sizeTxtCenter">
+								Cm
+							</td>
+							<td>23,63</td>
+							<td>24,9</td>
+							<td>26,18</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+			    <div class="col s5">
+			      		<img  src="/size_info_img/womanSize.jpg">
+			    </div>
+			</div>
+			{{/if}}
+		</div>
+	</div>
+</template>

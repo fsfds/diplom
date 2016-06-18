@@ -1,0 +1,51 @@
+
+<template  name="bag">
+	<div class="mrgTop">
+		<div class="row rowMarg">
+		    <div class=" col s7">
+			    <div class="txtVisb ">
+							  q
+				</div>
+			    {{#each bagItems }}
+						<div class="firstWishBlock imgBagList">
+							<div id="parent" class="imgBagSizes">
+									<img id="child" class="imgBagViev"  src="{{bagImg 0}}">
+							</div>
+							<p class="textBagViev">{{name}}</p>
+							<div class="row">
+								<div class="col s8 posRel">
+									<p class="bagPrice textBagViev">$ {{price}} </p>  
+								</div>
+								<div class="cols s4 posRel">
+									<button id="del" class="textBagViev bagDelBtn">Delete</button> 
+								</div>
+							</div>
+							<p class="bagSize textBagViev">Size {{size}} </p> 
+					    </div>
+				{{/each}}
+		    </div>
+		    <div class=" col s3">
+		    	{{#if bagItemsInside}}
+		    	<div class=" secWishBlock">
+					<p class="orderSumm">Order Summary</p>
+					{{#each bagItems }}
+					<div class="orderPrice">	
+						<p class="priceList nameBag textBagViev">{{name}}</p>
+						<p class="priceList priceBag textBagViev">$ {{price}} </p> 
+					</div>
+					{{/each}}
+					<div class="orderPrice">
+						<p class="priceList nameBag textBagViev">Total</p>
+						<p class="priceList priceBag textBagViev">$ {{bagSum}}</p> 
+					</div>
+					<button type="submit" class="myBtnBagMenu  btn btn-info fullbutton " id="buy">Buy</button>
+				</div>
+				{{/if}}
+		    </div>
+		    <div class="txtVisb col s2">
+		    	q
+		    </div>
+		</div>
+	</div>
+</template>
+

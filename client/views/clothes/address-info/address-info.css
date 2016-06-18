@@ -1,0 +1,14 @@
+
+.buy{
+	width: 260px;
+	margin-top: 50px;
+	height: 45px;
+}
+.addressInfoText{
+	max-width: 260px;
+	position: fixed;
+	margin-top: 70px;
+}
+.contactInf{
+	text-decoration: underline;
+}

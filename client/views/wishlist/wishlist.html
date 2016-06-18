@@ -1,0 +1,25 @@
+
+<template  name="wishlist">
+    <div class="mrgTop">
+		{{#each wishlistItems }}
+			<div class=" imgWishList">
+				<div id="parent" class="imgWishSizes">
+						<img id="child" class="imgWishViev"  src="{{wishImg 0}}">
+				</div>
+				<p class="textWishViev">{{name}}</p>
+				<!-- <div class="row">
+					<div class="col s8">
+						<p class="textWishViev">$ 111.11{{price}} </p> 
+					</div>
+					<div class="cols s4 wishBtnBlock">
+						<button id="del" class="wishBtn">del</button> 
+					</div>
+				</div> -->
+				<p class="textWishViev">$ {{price}} </p> 
+				<button id="del" class="wishBtn">Delete</button> 
+		    </div>
+		{{/each}}	
+
+	</div>
+</template>
+

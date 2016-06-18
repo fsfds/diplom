@@ -1,0 +1,23 @@
+<template  name="ClothesItem">
+			<div class=" imgList ">
+				<div id="parent" class="imgSizes">
+						<div id="wishList" class="wishMrg">
+							<img  class=" imgWishMrg"  src="/logo_img/2.svg" >
+							<!-- 	{{#if qwe}}
+									<img  class=" imgWishMrg"  src="/logo_img/star.png" >
+								{{/if}} -->
+							<div class="wishText">
+								<div class="mrgWishText">Add to Wishlist</div>
+							</div>
+						</div>
+						<img id="child" class="imgViev"  src="{{images 0}}">
+				</div>
+				<p class="textViev">{{name}}</p>
+				<p class="textViev">$ {{price}} </p>
+				{{#if isAdmin}}
+		            <!-- <a class="textViev" id="edit">edit</a> -->
+		            <button id="edit" class="wishBtn editClothBtn">Edit</button> 
+		            <button id="clothDel" class="wishBtn deleteClothBtn">Delete</button>    
+		        {{/if}}  
+		    </div>
+</template>

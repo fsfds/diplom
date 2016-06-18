@@ -1,0 +1,78 @@
+<template name="loginForm">  
+        {{# if currentUser}}
+        <div class="">
+            <img class="logOutImg" src="/size_info_img/logOut2.jpg">
+            <div class="caption ">
+                <p class="logOutWelc">Hello <strong>{{currentUser.username}}</strong>, welcome to FOR YOU shop</p>
+                <button class="logOutButt" type="button"  id="logout">Log out</button>
+            </div>
+        </div>
+        {{else}}
+        
+       <div class="row">
+        
+        <div class="col s6 secondBlock">
+        
+          <h5 >REGISTRATION</h5>
+            <form class="formValidate" id="formValidate" method="get" action novalidate="novalidate">
+                <div class="secondBlockMrg">
+                    <div class=" row">
+                        <div class="input-field w col s12">
+                            <input  id="signup-username" type="text" class="validate" pattern="[A-Za-z]{3,}">
+                            <label for="signup-username" data-error="need more than two letters">Username</label>  
+                        </div>
+                    </div>
+                    <div class=" row">
+                        <div class="input-field w col s12">
+                            <input type="email" id="eMail"  class="validate">
+                            <label for="eMail" >E-Mail</label>  
+                        </div>
+                    </div>
+                    <div class=" row">
+                        <div class="input-field w col s12">
+                            <input  id="signup-password" type="password" class="validate" pattern="[A-Za-z0-9/.]{6,}">
+                            <label for="signup-password" data-error="need more than five symbols">Password</label>  
+                        </div>
+                    </div>
+                    <div class=" row">
+                        <div class="input-field w col s12">
+                            <input  id="confim-password" type="password" class="validate" pattern="{{qq}}">
+                            <label for="confim-password" data-error="Wrong pasword" >Confirm Password</label>  
+                        </div>
+                    </div>
+                   
+                    <div class="input-field col s12">
+                            <button type="button" class="singButton myBtnLog btn btn-info fullbutton log" id="signup">Sign up</button>
+                    </div>
+                </div>
+            </form>
+       
+        </div>
+
+         <div class="col s6 firstBlock">
+          <h5>LOG IN</h5>
+            <form>
+                <div class="firstBlockMrg">
+                    <div class=" row">
+                        <div class="input-field w col s12">
+                            <input  id="login-username" type="text" class="validate" >
+                            <label for="login-username">Username</label>  
+                        </div>
+                    </div>
+                    <div class=" row">
+                        <div class="input-field w col s12">
+                            <input  id="login-password" type="password" class="validate">
+                            <label for="login-password">Password</label>  
+                        </div>
+                    </div>
+                    <div class="input-field col s12">
+                            <button type="button" class="logButton myBtnLog btn btn-info fullbutton log" id="login">Log in</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        </div>
+{{/if}}
+         
+</template>  

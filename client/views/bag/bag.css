@@ -1,0 +1,100 @@
+.imgBagList{	
+	display: inline-block;
+	margin-left: 87px;
+	margin-bottom: 50px;
+    }
+.imgBagSizes{
+	height: 500px;
+   	width: 390px;
+   	max-width: 100%;
+	max-height: 100%;
+}
+.imgBagViev{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	max-height: 100%;
+	margin-bottom: 0%;
+	z-index: 1;
+}
+
+.textBagViev{
+	font: 14px Verdana;
+	text-decoration:none;
+	margin-top: 10px;
+}
+
+.firstWishBlock{
+	margin-left:230px;
+}
+.secWishBlock{
+	position: fixed;
+	margin-top: 35px;
+	max-width: 250px;
+	/*background: red;*/
+}
+.priceList{
+	display: inline-block;
+	/*background: green;*/
+}
+.nameBag{
+	margin-left: 0px;
+}
+.priceBag{
+	right: 0px;
+	position: absolute;
+}
+.orderPrice{
+	margin-top: 10px;
+	position: relative;
+}
+.orderSumm{
+	text-align: center;
+}
+
+.myBtnBagMenu{/*btn viev*/
+	margin-top: 20px;
+	width: 260px;
+	height: 45px;
+	color:white !important;
+	background-color: black !important;
+	border:2px solid black ;
+}
+.myBtnBagMenu:hover{
+	color:black !important;
+	background-color: white !important;
+	border:2px solid black;
+	box-shadow: 0 0 0px rgba(0,0,0,0.0);
+	
+}
+.bagDelBtn{/*btn viev*/
+	position: absolute;
+	margin-top: 10px;
+	right: 0px;
+	width: 85px;
+  	height: 27px;
+	color:black ;
+	background-color: white ;
+	border:2px solid black ;
+}
+.bagDelBtn:hover{
+	color:white ;
+	background-color: black ;
+	border:2px solid black;
+	box-shadow: 0 0 0px rgba(0,0,0,0.0);
+	
+}
+.bagDelBtn:focus{
+	color:black ;
+	background-color: white ;
+}
+.bagPrice{
+	position: absolute;
+	left: 0px;
+}
+.bagSize{
+	margin-top: 40px;
+}
+.posRel{
+	position: relative;
+}

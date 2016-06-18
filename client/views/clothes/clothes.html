@@ -1,21 +1,272 @@
 <template name="Clothes">
-
-	{{#if clothes }}
-		{{#each clothes}}
-			{{>ClothesItem}}
-		{{/each}}
-	{{/if}}
-</template>
-
-
-
-
-
-<template name="ClothesItem">
-	<div>
-		<img src="{{img}}" >
-		<p>{{name}}</p>
-		<p>{{price}}</p>
+<div class="row mrgTop">
+	<div class=" col s1">
+		<form>
+			
+			<div class="leftMenu">
+		    {{#if equal category "man"}}
+                                        <div id="man" class="findCat">
+                                        <ol  class="txtHovLeftMenu"><li  class=" leftMenuCat" href="">
+                                           MAN 
+                                        </li>
+				                        <li><a class="subcategory" id="new-man" href="">
+                                           New 
+                                        </a></li>
+                                        <li><a class="subcategory" id="jackets-man" href="">
+                                           Jackets 
+                                        </a></li >
+                                        <li><a class="subcategory" id="coats-man" href="">
+                                            Coats
+                                        </a></li>
+                                        <li><a  class="subcategory" id="bomberJackets-man" href="">
+                                            Bomber jacket
+                                        </a></li>
+                                        <li><a  class="subcategory" id="jeans-man" href="">
+                                            Jeans
+                                        </a></li>
+                                        <li><a  class="subcategory" id="tShirts-man" href="">
+                                            T-shirts
+                                        </a></li>
+                                        <li><a  class="subcategory" id="sweatshirts-man" href="">
+                                            Sweatshirts
+                                        </a></li>
+                                        <li><a  class="subcategory" id="trousers-man" href="">
+                                            Trousers
+                                        </a></li>
+                                        <li><a class="subcategory" id="joggers-man" href="">
+                                          Joggers 
+                                        </a></li>
+                                       <li> <a class="subcategory" id="shirts-man" href="">
+                                           Shirts 
+                                        </a></li>
+                                        <li><a class="subcategory" id="shorts-man" href="">
+                                            Shorts
+                                        </a></li>
+                                        <li><a class="subcategory" id="swimwear-man" href="">
+                                            Swimwear
+                                        </a></li>
+                                        <li><a class="subcategory" id="knitwear-man" href="">
+                                            Knitwear
+                                        </a></li>
+                                        <li><a class="subcategory" id="accessories-man" href="">
+                                            Accessories
+                                        </a></li></ol> </div>   		     
+		    {{/if}}
+		    {{#if equal category "woman"}}
+                                        <div id="woman" class="findCat">
+                                        <ol  class="txtHovLeftMenu"><li class="leftMenuCat" href="">
+                                           WOMAN 
+                                        </li>
+		                                <li><a class="subcategory" id="new-woman" href="">
+                                           New 
+                                        </a></li>
+                                        <li><a class="subcategory" id="bomberJackets-woman" href="">
+                                           Bomber jackets 
+                                        </a></li>
+                                        <li><a class="subcategory" id="jackets-woman" href="">
+                                            Jackets
+                                        </a></li>
+                                        <li><a class="subcategory" id="blazers-woman" href="">
+                                            Blazers
+                                        </a></li>
+                                        <li><a class="subcategory" id="dresses-woman" href="">
+                                            Dresses
+                                        </a></li>
+                                        <li><a class="subcategory" id="jumpsuits-woman" href=""> 
+                                            Jumpsuits
+                                        </a></li>
+                                        <li><a class="subcategory" id="jeans-woman" href="">
+                                            Jeans
+                                        </a></li>
+                                        <li><a class="subcategory" id="trousers-woman" href="">
+                                            Trousers
+                                        </a></li>
+                                        <li><a class="subcategory" id="tShirts-woman" href="">
+                                          T-Shirts 
+                                        </a></li>
+                                       <li> <a class="subcategory" id="tops-woman" href="">
+                                           Tops 
+                                        </a></li>
+                                        <li><a class="subcategory" id="bodysuits-woman" href="">
+                                            Bodysuits
+                                        </a></li>
+                                        <li><a class="subcategory" id="shirts-woman" href="">
+                                            Shirts
+                                        </a></li>
+                                        <li><a class="subcategory" id="knitwear-woman" href="">
+                                            Knitwear
+                                        </a></li>
+                                        <li><a class="subcategory" id="sweatshirts-woman" href="">
+                                            Sweatshirts
+                                        </a></li>
+                                        <li><a class="subcategory" id="skirts-woman" href="">
+                                          Skirts 
+                                        </a></li>
+                                       <li> <a class="subcategory" id="shorts-woman" href="">
+                                           Shorts 
+                                        </a></li>
+                                        <li><a class="subcategory" id="swimwear-woman" href="">
+                                            Swimwear
+                                        </a></li>
+                                        <li><a class="subcategory" id="shoes-woman" href="">
+                                            Shoes
+                                        </a></li></ol></div>
+		    {{/if}}
+		    {{#if equal category "accessories-woman"}}
+                                                <div id="accessories-woman" class="findCat">
+                                                <ol  class="txtHovLeftMenu"><li class="leftMenuCat" href="">
+                                                   WOMAN ACCESSORIES
+                                                </li>
+                                                <li><a class="subcategory" id="bags-accessories-woman" href="">
+                                                   Bags 
+                                                </a></li>
+                                                <li><a class="subcategory" id="wallets-accessories-woman" href="">
+                                                   Wallets 
+                                                </a></li>
+                                                <li><a class="subcategory" id="jewellery-accessories-woman" href="">
+                                                    Jewellery
+                                                </a></li>
+                                                <li><a class="subcategory" id="watches-accessories-woman" href="">
+                                                    Watches
+                                                </a></li>
+                                                <li><a class="subcategory" id="belts-accessories-woman" href="">
+                                                    Belts
+                                                </a></li>
+                                                <li><a class="subcategory" id="glasses-accessories-woman" href="">
+                                                    Glasses
+                                                </a></li>
+                                                <li><a class="subcategory" id="patches-accessories-woman" href="">
+                                                    Patches
+                                                </a></li>
+                                                <li><a class="subcategory" id="hair-accessories-woman" href="">
+                                                    Hair accessories
+                                                </a></li></ol></div>
+            {{/if}}
+            {{#if equal category "accessories-man"}}
+                                                <div id="accessories-man" class="findCat">
+                                                <ol  class="txtHovLeftMenu"><li class="leftMenuCat" href="">
+                                                   MAN ACCESSORIES
+                                                </li>
+                                                <li><a class="subcategory" id="watches-accessories-man" href="">
+                                                   Watches 
+                                                </a></li>
+                                                <li><a class="subcategory" id="backpacks-accessories-man" href="">
+                                                   Backpacks 
+                                                </a></li>
+                                                <li><a class="subcategory" id="wallets-accessories-man" href="">
+                                                    Wallets
+                                                </a></li>
+                                                <li><a class="subcategory" id="caps-accessories-man" href="">
+                                                    Caps & beanies
+                                                </a></li>
+                                                <li><a class="subcategory" id="belts-accessories-man" href="">
+                                                    Belts
+                                                </a></li>
+                                                <li><a class="subcategory" id="glasses-accessories-man" href="">
+                                                    Glasses
+                                                </a></li>
+                                                <li><a class="subcategory" id="socks-accessories-man" href="">
+                                                    Socks
+                                                </a></li>
+                                                <li><a class="subcategory" id="underwear-accessories-man" href="">
+                                                    Underwear
+                                                </a></li></ol></div>
+            {{/if}}
+            {{#if equal category "shoes-woman"}}
+                                                <div id="shoes-woman" class="findCat">
+                                                <ol  class="txtHovLeftMenu"><li class="leftMenuCat" href="">
+                                                   WOMAN SHOES
+                                                </li>
+                                                <li><a class="subcategory " id="trainers-shoes-woman" href="">
+                                                   Trainers 
+                                                </a></li>
+                                                <li><a class="subcategory " id="heels-shoes-woman" href="">
+                                                   Heels 
+                                                </a></li>
+                                                <li><a class="subcategory " id="heeledSandals-shoes-woman" href="">
+                                                   Heeled Sandals
+                                                </a></li>
+                                                <li><a class="subcategory " id="flatSandals-shoes-woman" href="">
+                                                    Flat Sandals
+                                                </a></li>
+                                                <li><a class="subcategory " id="wedges-shoes-woman" href="">
+                                                    Wedges
+                                                </a></li>
+                                                <li><a class="subcategory " id="flats-shoes-woman" href="">
+                                                    Flats
+                                                </a></li>
+                                                <li><a class="subcategory " id="boots-shoes-woman" href="">
+                                                    Boots & Ankle boots
+                                                </a></li></ol></div>                           
+            {{/if}}
+            {{#if equal category "shoes-man"}}
+                                                <div id="shoes-man" class="findCat">
+                                                <ol  class="txtHovLeftMenu"><li class="leftMenuCat" href="">
+                                                   MAN SHOES
+                                                </li>
+                                                <li><a class="subcategory " id="trainers-shoes-man" href="">
+                                                   Trainers 
+                                                </a></li>
+                                                <li><a class="subcategory " id="boots-shoes-man" href="">
+                                                   Boots & Ankle boots 
+                                                </a></li>
+                                                <li><a class="subcategory " id="shoes-shoes-man" href="">
+                                                    Shoes
+                                                </a></li>
+                                                <li><a class="subcategory " id="sandals-shoes-man" href="">
+                                                    Sandals
+                                                </a></li></ol></div>                     
+            {{/if}}
+            {{#if equal category "promo-woman"}}
+                                                <div id="shoes-man" class="findCat">
+                                                <ol  class="txtHovLeftMenu"><li class="leftMenuCat" href="">
+                                                   WOMAN PROMO
+                                                </li>
+                                                <li><a class="subcategory " id="accessories-promo-woman" href="">
+                                                   -30% on accessories 
+                                                </a></li>
+                                                <li><a class="subcategory " id="sport-promo-woman" href="">
+                                                   -30% on Sport Start Moving
+                                                </a></li>
+                                                <li><a class="subcategory " id="shoes-promo-woman" href="">
+                                                    -30% on shoes
+                                                </a></li>
+                                                <li><a class="subcategory " id="dresses-promo-woman" href="">
+                                                    -30% on dresses
+                                                </a></li>
+                                                </ol></div>                     
+            {{/if}}
+            {{#if equal category "promo-man"}}
+                                                <div id="shoes-man" class="findCat">
+                                                <ol  class="txtHovLeftMenu"><li class="leftMenuCat" href="">
+                                                   MAN PROMO
+                                                </li>
+                                                <li><a class="subcategory " id="shoes-promo-man" href="">
+                                                   -30% on shoes
+                                                </a></li></ol></div>                     
+            {{/if}}
+		    </div>
+		</form>
 	</div>
+	<div class=" col s11 clothItemsMrg">
+        <div class="clothItemsMrgSec">
+        	<form>
+            	{{#if clothes }}
+            		{{#each clothes}}
+            			{{>ClothesItem}}
+            		{{/each}}	
+            	{{/if}}
+        	</form>
+    	</div>
+    </div>
+
+
+</div>
 </template>
+
+
+
+
+
+
 

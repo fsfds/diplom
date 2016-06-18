@@ -1,0 +1,163 @@
+<template  name="clothesInfo">
+	<div class="row mrgTop">
+		<div class="col s7">
+			<form>
+				<div class="row ">
+					<div class="txtVisb col s2">
+					  q
+					</div>
+					<div class="col s2">
+		               <div class="row margTopSecPhotoBlock">
+			                <div id="parent" class=" materialboxed infoSecPhotoBlock">
+			                <img id="child" class="infoImageSize" src="{{imageByNumber 1}}">
+			                </div>
+			                <div id="parent" class="materialboxed infoSecPhotoBlock">
+			                <img id="child" class="infoImageSize" src="{{imageByNumber 2}}">
+			                </div>
+			                <div id="parent" class="materialboxed infoSecPhotoBlock">
+			                <img id="child" class="infoImageSize" src="{{imageByNumber 3}}">
+			                </div> 
+			            </div>  
+	                </div>
+	                <div class="col s8">
+		                <div id="parent" class="materialboxed infoMainImgSizes">
+							<img id="child" class="imgViev"  src="{{imageByNumber 0}}">
+						</div>
+	                </div>
+	            </div>
+			</form>
+		</div>
+		<div class="col s3 ">
+			<form>
+					<div class=" row">
+	                    <div class="col s12 ">
+	                    	<p class="">{{clothItem.name}}</p>
+	                        
+	                    </div>
+	            	</div>
+	            	<div class=" row">
+	                    <div class=" col s12">
+	                       <p class="">$ {{clothItem.price}} </p>
+	                    </div>
+	                </div>
+					{{#if sizeManFirst}}
+	                <div class="row ">
+					    <div class="col s12 sizes">
+					      <ul class="tabs">
+					        <li class="tab col s3 sizeFirst"><a id="XS" href="">XS</a></li>
+					        <li class="tab col s3 sizeFirst"><a id="S" href="">S</a></li>
+					        <li class="tab col s3 sizeFirst"><a id="M" href="">M</a></li>
+					        <li class="tab col s3 sizeFirst"><a id="L" href="">L</a></li>
+					        <li class="tab col s3 sizeFirst"><a id="XL" href="">XL</a></li>
+					      </ul>
+					    </div>
+					</div>
+					{{/if}}
+					{{#if sizeManSec}}
+	                <div class="row ">
+					    <div class="col s12 sizes">
+					      <ul class="tabs">
+					        <li class="tab col s3 sizeSec"><a id="34" href="">34</a></li>
+					        <li class="tab col s3 sizeSec"><a id="36" href="">36</a></li>
+					        <li class="tab col s3 sizeSec"><a id="38" href="">38</a></li>
+					        <li class="tab col s3 sizeSec"><a id="40" href="">40</a></li>
+					        <li class="tab col s3 sizeSec"><a id="42" href="">42</a></li>
+					        <li class="tab col s3 sizeSec"><a id="44" href="">44</a></li>
+					        <li class="tab col s3 sizeSec"><a id="46" href="">46</a></li>
+					      </ul>
+					    </div>
+					</div>
+					{{/if}}
+					{{#if sizeManThird}}
+	                <div class="row ">
+					    <div class="col s12 sizes">
+					      <ul class="tabs">
+					        <li class="tab col s3 sizeSec"><a id="39" href="">39</a></li>
+					        <li class="tab col s3 sizeSec"><a id="40" href="">40</a></li>
+					        <li class="tab col s3 sizeSec"><a id="41" href="">41</a></li>
+					        <li class="tab col s3 sizeSec"><a id="42" href="">42</a></li>
+					        <li class="tab col s3 sizeSec"><a id="43" href="">43</a></li>
+					        <li class="tab col s3 sizeSec"><a id="44" href="">44</a></li>
+					        <li class="tab col s3 sizeSec"><a id="45" href="">45</a></li>
+					      </ul>
+					    </div>
+					</div>
+					{{/if}}
+					{{#if sizeWomFirst}}
+	                <div class="row ">
+					    <div class="col s12 sizes">
+					      <ul class="tabs">
+					        <li class="tab col s3 sizeFirst"><a id="XS" href="">XS</a></li>
+					        <li class="tab col s3 sizeFirst"><a id="S" href="">S</a></li>
+					        <li class="tab col s3 sizeFirst"><a id="M" href="">M</a></li>
+					        <li class="tab col s3 sizeFirst"><a id="L" href="">L</a></li>
+					        <li class="tab col s3 sizeFirst"><a id="XL" href="">XL</a></li>
+					      </ul>
+					    </div>
+					</div>
+					{{/if}}
+					{{#if sizeWomSec}}
+	                <div class="row ">
+					    <div class="col s12 sizes">
+					      <ul class="tabs">
+					      	<li class="tab col s3 sizeSec"><a id="30" href="">30</a></li>
+					        <li class="tab col s3 sizeSec"><a id="32" href="">32</a></li>
+					        <li class="tab col s3 sizeSec"><a id="34" href="">34</a></li>
+					        <li class="tab col s3 sizeSec"><a id="36" href="">36</a></li>
+					        <li class="tab col s3 sizeSec"><a id="38" href="">38</a></li>
+					        <li class="tab col s3 sizeSec"><a id="40" href="">40</a></li>
+					        <li class="tab col s3 sizeSec"><a id="42" href="">42</a></li>
+					      </ul>
+					    </div>
+					</div>
+					{{/if}}
+					{{#if sizeWomThird}}
+	                <div class="row ">
+					    <div class="col s12 sizes">
+					      <ul class="tabs">
+					        <li class="tab col s3 sizeSec"><a id="35" href="">35</a></li>
+					        <li class="tab col s3 sizeSec"><a id="36" href="">36</a></li>
+					        <li class="tab col s3 sizeSec"><a id="37" href="">37</a></li>
+					        <li class="tab col s3 sizeSec"><a id="38" href="">38</a></li>
+					        <li class="tab col s3 sizeSec"><a id="39" href="">39</a></li>
+					        <li class="tab col s3 sizeSec"><a id="40" href="">40</a></li>
+					        <li class="tab col s3 sizeSec"><a id="41" href="">41</a></li>
+					      </ul>
+					    </div>
+					</div>
+					{{/if}}
+					
+	                <div class="row">
+	                    <div class="col s12">
+	                    	<a id="sizeInfo" class="underLine" href="">Size guide</a>
+	                    </div>
+	                </div>
+	               
+	                <div class=" row">
+	                    <div class=" col s12">
+	                        <button type="submit" class="myBtnInfoMenu  btn btn-info fullbutton " id="buy">Buy</button>
+	                    </div>
+	                </div>
+	                <div class=" row">
+	                    <div class=" col s12">
+
+	                        <button type="submit" class="myBtnInfoMenu btn btn-info fullbutton " id="addToBox">Add to bag</button>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col s12" id="wishList" href="">
+	                    	<img class="star" src="/logo_img/2.svg" href="">
+	                    	<a class="starText underLine" href="">Add to Wishlist</a>
+	                    </div>
+	                </div>
+			</form>
+		</div>
+		<div class="col s2 ">
+			<form>
+				<div class=" row">
+	                    
+	            </div>
+			</form>
+		</div>
+	</div>
+</template>

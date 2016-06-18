@@ -1,0 +1,55 @@
+.sizeBox{
+	min-width: 95%;
+	margin-top: 30px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: -20px;
+}
+.sizeTxtCenter{
+	text-align: left !important;
+}
+.ss{
+	  font-family: -roboto-REGULAR;
+	  color: black !important;
+	  font-size: 13px;
+	  text-transform: uppercase;
+	  line-height: normal;
+}
+
+.scrollbar/*scroll*/
+{
+	float: left;
+	height: 90%;
+	overflow-y: scroll;
+}
+#style-1::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: white;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: white ;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color:#bdbdbd;
+}/*scroll*/
+.extSize{
+	margin-left: 97%;
+	height: 0px;
+	width: 17px;
+	margin-top: 1%;
+	margin-bottom: 5px;
+}
+td,th{
+	padding: 9px 3px;
+	text-align: center !important;
+}
+.sizeTxt{
+	font-size: 12px;
+}

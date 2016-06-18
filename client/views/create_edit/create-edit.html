@@ -1,0 +1,84 @@
+
+<template  name="createEdit">
+    <div class="row mrgTop">
+        <div class=" col s8">
+            <form id="clothes-form" class="inputMarg">
+                <div class=" row">
+                    <div class="input-field col s8 ">
+                        <input  id="name" type="text" class=" validate" value ="{{clothItem.name}}">
+                        <label  for="name" class="{{#if clothItem.name}}active{{/if}}" >Name</label>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s8 ">
+                        <input id="price" type="text" pattern="\d{1,3}\.\d{2}" class="validate" value = "{{clothItem.price}}">
+                        <label for="price" data-error="price type xx.xx" class="{{#if clothItem.price}}active{{/if}}">Price</label>
+                    </div>
+                </div>
+                <div class=" row">
+                    <div class="input-field col s8">
+                        <select class="subcategory" id="category" >
+                                    {{#each allCategories}}
+                                        <option value="{{id}}" selected="{{#if equal id ../clothItem.category}}selected{{/if}}">
+                                        {{label}}
+                                        </option>
+                                    {{/each}}
+                        </select>
+                        <label for="category">Main category</label>
+                    </div>
+                </div>
+               
+                 <div class="row">
+                    <div class=" input-field col s8">
+                        <select class="subcategory" id="subcategory" >
+                        {{#each allSubcategories}}
+                            <option value="{{id}}" selected="{{#if equal id ../clothItem.subcategory}}selected{{/if}}">
+                                {{label}}
+                            </option>
+                        {{/each}}
+
+                            </select>
+                            <label for="subcategory">Subcategory</label>
+                    </div>
+                 </div>
+
+
+                <div class=" row">
+                    <div class=" col s8 file-field input-field">
+                        <div class=" myBtn btn">
+                            <span>File</span>
+                            <input type="file" multiple 
+                            id="image-input">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                        </div>
+                    </div>
+                </div>
+                <div >
+                    <button type="submit" class="myBtn savePhoto btn btn-info fullbutton " id="">Save</button>
+                    <button type="button" class="myBtn delPhoto btn btn-info fullbutton" id="del">Delete</button>
+                </div>
+            </form>
+        </div>
+        <div class="col s4">
+            <div class="row ">
+                <div id="parent" class="firPhotoBlock photoBlockMrg" >
+                    <img id="child" class="imgSize" src="{{imageByNumber 0}}">
+                </div>
+            </div>
+            <div class="row photoBlockMrg">
+                <div id="parent" class="secPhotoBlock">
+                    <img id="child" class="imgSize" src="{{imageByNumber 1}}">
+                </div>
+                <div id="parent" class="secPhotoBlock">
+                    <img id="child" class="imgSize" src="{{imageByNumber 2}}">
+                </div>
+                <div id="parent" class="secPhotoBlock">
+                    <img id="child" class="imgSize" src="{{imageByNumber 3}}">
+                </div>
+             </div>   
+        </div>
+    </div>
+</template>
+

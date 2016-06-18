@@ -1,31 +1,416 @@
+
 <template name="TopMenu">
-
-<div class ="main priorytyup">
-    <a href="index.html"><img class="imgimg" src="my_img/1.jpg"></a>
-   
-    <div class="menu">      <!-- Menu -->
-        <div id="menu">
-            <ul class="menu ">
-                <li class="qwe"><a id="link-man">MAN</a>	
-                </li>
-                <li class=" qwe"><a id="link-woman">WOMAN</a>
-                </li>
-                <li class=" qwe"><a id="link-kids">KIDS</a>   
-                </li>
-                
-            </ul>
+<div class="disBlock">
+    <div class=" main ">
+        <div >
+            <!-- <h2 id="logo-img" class="imgimgq" >FOR YOU</h2> -->
+            <a id="logo-img" class="imgimgq" href="">FOR YOU</a>
+            <!--<img  class="imgimg" src="/my_img/1.jpg">-->
         </div>
-
-
-            <div id="form">     <!-- form -->
-                <form class="form-search">
-                    <input type="text" class="input-medium search-query">
-                    <button type="submit" class="btn">Search</button>
-                </form>
+        <div class="pepMenu "> 
+            <div class="logEditMrg">
+                <table class="">
+                    <tr>
+                        {{#if isAdmin}}
+                            {{>userAdmin}}
+                        {{/if}}
+                        <!-- {{#if currentUser }}
+                            {{>userVisitor}}
+                        {{/if}} -->
+                        <th class="tableEdit">
+                                <!-- <img  class="logButt" id="company" src="/logo_img/info3.svg"> -->
+                                <img  class="logButt tooltipped" data-position="bottom" data-delay="50" data-tooltip="Company info" id="company" src="/logo_img/info3.svg">
+                        </th>
+                        <th class="tableEdit">
+                            <!-- <img  class="logButt" id="login" src="/logo_img/3.svg"> -->
+                            <img  class="logButt tooltipped" data-position="bottom" data-delay="50" data-tooltip="Login" id="login" src="/logo_img/3.svg">
+                        </th>
+                    </tr>
+                </table>
             </div>
+        </div> 
+        <div class="row rowMarg">
+            <ul class="center  menu disBlock col s12">
+                    <li  class="txtHov category">
+                        <a  class=" dropdown-button "  data-activates='dropdown1' href="">MAN</a>
+                        <div  id='dropdown1' class=' brdbot row slideMenu dropdown-content' >
+                            <div id="man" class="findCat mainCatBlock row">
+                                <div class="margCatMan col s1">
+                                    <ol><li  class=" topCatZer">
+                                        MAN
+                                    </li></ol>
+                                    <div class="topCatFirst row">
+                                        <ol><li><a class=" subcategory" id="new-man">
+                                           New 
+                                        </a></li>
+                                        <li><a class=" subcategory" id="jackets-man">
+                                           Jackets 
+                                        </a></li >
+                                        <li><a class=" subcategory" id="coats-man">
+                                            Coats
+                                        </a></li>
+                                        <li><a  class=" subcategory" id="bomberJackets-man">
+                                            Bomber jacket
+                                        </a></li>
+                                        <li><a  class=" subcategory" id="jeans-man">
+                                            Jeans
+                                        </a></li>
+                                        <li><a  class=" subcategory" id="tShirts-man">
+                                            T-shirts
+                                        </a></li>
+                                        <li><a  class=" subcategory" id="sweatshirts-man">
+                                            Sweatshirts
+                                        </a></li>
+                                        <li><a  class=" subcategory" id="trousers-man">
+                                            Trousers
+                                        </a></li></ol>
+                                    </div>
+                                </div>
+                                <div class="topCatSec col s1">
+                                    <div class="row">
+                                        <ol><li><a class=" subcategory" id="joggers-man">
+                                          Joggers 
+                                        </a></li>
+                                       <li> <a class=" subcategory" id="shirts-man">
+                                           Shirts 
+                                        </a></li>
+                                        <li><a class=" subcategory" id="shorts-man">
+                                            Shorts
+                                        </a></li>
+                                        <li><a class=" subcategory" id="swimwear-man">
+                                            Swimwear
+                                        </a></li>
+                                        <li><a class=" subcategory" id="knitwear-man">
+                                            Knitwear
+                                        </a></li>
+                                        <li><a class=" subcategory" id="accessories-man">
+                                            Accessories
+                                        </a></li></ol>
+                                    </div>
+                                </div>
+                                <div class="col s2">
+                                    <div class="topCatImg row">
+                                        <img class="topImgShad" src="/size_info_img/man.jpg">
+                                    </div>
+                                    <div class=" row">
+                                    <a class="underLineTopMan subcategory"  id="tShirts-man" href="">T-shirts</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                <li  class="txtHov category">
+                    <a  class=" dropdown-button"  data-activates='dropdown2' href="">WOMAN</a>
+                    <div  id='dropdown2' class=' brdbot row slideMenu dropdown-content' >
+                            <div id="woman" class="findCat mainCatBlock row">
+                                <div class="margCatWom col s1">
+                                    <ol><li class="topCatZer ">
+                                        WOMAN
+                                    </li></ol>
+                                    <div class="topCatFirst row">
+                                        <ol><li><a class=" subcategory" id="new-woman">
+                                           New 
+                                        </a></li>
+                                        <li><a class=" subcategory" id="bomberJackets-woman">
+                                           Bomber jackets 
+                                        </a></li>
+                                        <li><a class=" subcategory" id="jackets-woman">
+                                            Jackets
+                                        </a></li>
+                                        <li><a class=" subcategory" id="blazers-woman">
+                                            Blazers
+                                        </a></li>
+                                        <li><a class=" subcategory" id="dresses-woman">
+                                            Dresses
+                                        </a></li>
+                                        <li><a class=" subcategory" id="jumpsuits-woman">
+                                            Jumpsuits
+                                        </a></li>
+                                        <li><a class=" subcategory" id="jeans-woman">
+                                            Jeans
+                                        </a></li>
+                                        <li><a class=" subcategory" id="trousers-woman">
+                                            Trousers
+                                        </a></li></ol>
+                                    </div>
+                                </div>
+                                <div class="topCatSec col s1">
+                                    <div class="row">
+                                        <ol><li><a class=" subcategory" id="tShirts-woman">
+                                          T-Shirts 
+                                        </a></li>
+                                       <li> <a class=" subcategory" id="tops-woman">
+                                           Tops 
+                                        </a></li>
+                                        <li><a class=" subcategory" id="bodysuits-woman">
+                                            Bodysuits
+                                        </a></li>
+                                        <li><a class=" subcategory" id="shirts-woman">
+                                            Shirts
+                                        </a></li>
+                                        <li><a class=" subcategory" id="knitwear-woman">
+                                            Knitwear
+                                        </a></li>
+                                        <li><a class=" subcategory" id="sweatshirts-woman">
+                                            Sweatshirts
+                                        </a></li></ol>
+                                    </div>
+                                </div>
+                                <div class="topCatSec col s1">
+                                    <div class="row">
+                                        <ol><li><a class=" subcategory" id="skirts-woman">
+                                          Skirts 
+                                        </a></li>
+                                       <li> <a class=" subcategory" id="shorts-woman">
+                                           Shorts 
+                                        </a></li>
+                                        <li><a class=" subcategory" id="swimwear-woman">
+                                            Swimwear
+                                        </a></li>
+                                        <li><a class=" subcategory" id="shoes-woman">
+                                            Shoes
+                                        </a></li></ol>
+                                    </div>
+                                </div>
+                                <div class="col s2">
+                                    <div class="topCatImg row">
+                                        <img class="topImgShad" src="/size_info_img/woman.jpg">
+                                    </div>
+                                    <div class=" row">
+                                    <a class="subcategory underLineTopWom"  id="shirts-woman" href="">Shirts</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </li>
+                <li  class="txtHov category">
+                    <a  class=" dropdown-button"  data-activates='dropdown3' href="">ACCESSORIES</a>
+                    <div  id='dropdown3' class=' brdbot row slideMenu dropdown-content' >
+                            <div id="accessories-woman" class="brdmid col s6">
+                                <form>
+                                    <div id="accessories-woman" class="findCat mainCatBlock row">
+                                        <div class="margCatAcsWom col s1">
+                                            <ol><li class=" topCatZer">
+                                                WOMAN
+                                            </li></ol>
+                                            <div class="topCatFirst row">
+                                                <ol><li><a class=" subcategory" id="bags-accessories-woman">
+                                                   Bags 
+                                                </a></li>
+                                                <li><a class=" subcategory" id="wallets-accessories-woman">
+                                                   Wallets 
+                                                </a></li>
+                                                <li><a class=" subcategory" id="jewellery-accessories-woman">
+                                                    Jewellery
+                                                </a></li>
+                                                <li><a class=" subcategory" id="watches-accessories-woman">
+                                                    Watches
+                                                </a></li>
+                                                <li><a class=" subcategory" id="belts-accessories-woman">
+                                                    Belts
+                                                </a></li>
+                                                <li><a class=" subcategory" id="glasses-accessories-woman">
+                                                    Glasses
+                                                </a></li>
+                                                <li><a class=" subcategory" id="patches-accessories-woman">
+                                                    Patches
+                                                </a></li>
+                                                <li><a class=" subcategory" id="hair-accessories-woman">
+                                                    Hair accessories
+                                                </a></li></ol>
+                                            </div>
+                                        </div>
+                                        <div class="col s2">
+                                            <div class="topCatImgHalf row">
+                                                <img class="topImgShad" src="/size_info_img/bag.jpg">
+                                            </div>
+                                            <div class=" row">
+                                            <a id="bags-accessories-woman" class="subcategory underLineTopAcs" href="">Bags</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div  class="col s6">
+                                <div id="accessories-man" class="findCat mainCatBlock row">
+                                        <div class="margCatAcsMan col s1">
+                                            <ol><li class="topCatZer">
+                                                MAN
+                                            </li></ol>
+                                            <div class="topCatFirst row">
+                                                <ol><li><a class=" subcategory" id="watches-accessories-man">
+                                                   Watches 
+                                                </a></li>
+                                                <li><a class=" subcategory" id="backpacks-accessories-man">
+                                                   Backpacks 
+                                                </a></li>
+                                                <li><a class=" subcategory" id="wallets-accessories-man">
+                                                    Wallets
+                                                </a></li>
+                                                <li><a class=" subcategory" id="caps-accessories-man">
+                                                    Caps & beanies
+                                                </a></li>
+                                                <li><a class=" subcategory" id="belts-accessories-man">
+                                                    Belts
+                                                </a></li>
+                                                <li><a class=" subcategory" id="glasses-accessories-man">
+                                                    Glasses
+                                                </a></li>
+                                                <li><a class=" subcategory" id="socks-accessories-man">
+                                                    Socks
+                                                </a></li>
+                                                <li><a class=" subcategory" id="underwear-accessories-man">
+                                                    Underwear
+                                                </a></li></ol>
+                                            </div>
+                                        </div>
+                                        <div class="col s2">
+                                            <div class="topCatImgHalf row">
+                                                <img class="topImgShad" src="/size_info_img/cap.jpg">
+                                            </div>
+                                            <div class=" row">
+                                            <a id="caps-accessories-man" class="subcategory underLineTopAcs" href="">Caps</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                    </div>
+                </li>
+                <li class="txtHov category">
+                    <a  class=" dropdown-button"  data-activates='dropdown4' href="">SHOES</a>
+                    <div  id='dropdown4' class=' brdbot row slideMenu dropdown-content' >
+                            <div class="brdmid col s6">
+                                <form>
+                                    <div id="shoes-woman" class="findCat mainCatBlock row">
+                                        <div class="margCatAcsWom col s1">
+                                            <ol><li class="topCatZer">
+                                                WOMAN
+                                            </li></ol>
+                                            <div class="topCatFirst row">
+                                                <ol><li><a class=" subcategory" id="trainers-shoes-woman">
+                                                   Trainers 
+                                                </a></li>
+                                                <li><a class=" subcategory" id="heels-shoes-woman">
+                                                   Heels 
+                                                </a></li>
+                                                <li><a class=" subcategory" id="heeledSandals-shoes-woman">
+                                                   Heeled Sandals
+                                                </a></li>
+                                                <li><a class=" subcategory" id="flatSandals-shoes-woman">
+                                                    Flat Sandals
+                                                </a></li>
+                                                <li><a class=" subcategory" id="wedges-shoes-woman">
+                                                    Wedges
+                                                </a></li>
+                                                <li><a class=" subcategory" id="flats-shoes-woman">
+                                                    Flats
+                                                </a></li>
+                                                <li><a class=" subcategory" id="boots-shoes-woman">
+                                                    Boots & Ankle boots
+                                                </a></li></ol>
+                                            </div>
+                                        </div>
+                                        <div class="col s2">
+                                            <div class="topCatImgHalf row">
+                                                <img class="topImgShad" src="/size_info_img/shoeW.jpg">
+                                            </div>
+                                            <div class=" row">
+                                            <a id="trainers-shoes-woman" class="subcategory underLineTopShoe" href="">Trainers</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col s6">
+                                <div id="shoes-man" class="findCat mainCatBlock row">
+                                        <div class="margCatAcsMan col s1">
+                                            <ol><li class="topCatZer">
+                                                MAN
+                                            </li></ol>
+                                            <div class="topCatFirst row">
+                                                <ol><li><a class=" subcategory" id="trainers-shoes-man">
+                                                   Trainers 
+                                                </a></li>
+                                                <li><a class=" subcategory" id="boots-shoes-man">
+                                                   Boots & Ankle boots 
+                                                </a></li>
+                                                <li><a class=" subcategory" id="shoes-shoes-man">
+                                                    Shoes
+                                                </a></li>
+                                                <li><a class=" subcategory" id="sandals-shoes-man">
+                                                    Sandals
+                                                </a></li></ol>
+                                            </div>
+                                        </div>
+                                        <div class="col s2">
+                                            <div class="topCatImgHalf row">
+                                                <img class="topImgShad" src="/size_info_img/shoeM.jpg">
+                                            </div>
+                                            <div class=" row">
+                                            <a id="sandals-shoes-man" class="subcategory underLineTopShoe" href="">Sandals</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                    </div>
+                </li>
+                <li class="txtHov category">
+                    <a  class=" dropdown-button"  data-activates='dropdown5' href="">PROMO</a>
+                    <div  id='dropdown5' class=' brdbot row slideMenu dropdown-content' >
+                            <div class="brdmid col s6">
+                                <form>
+                                    <div id="promo-woman" class="findCat mainCatBlock row">
+                                        <div class="margCatAcsWom col s1">
+                                            <ol><li class="topCatZer">
+                                                WOMAN
+                                            </li></ol>
+                                            <div class="topCatFirst row">
+                                                <ol><li><a class=" subcategory" id="accessories-promo-woman">
+                                                   -30% on accessories 
+                                                </a></li>
+                                                <li><a class=" subcategory" id="sport-promo-woman">
+                                                   -30% on Sport Start Moving 
+                                                </a></li>
+                                                <li><a class=" subcategory" id="shoes-promo-woman">
+                                                   -30% on shoes
+                                                </a></li>
+                                                <li><a class=" subcategory" id="dresses-promo-woman">
+                                                   -30% on dresses
+                                                </a></li></ol>
+                                            </div>
+                                        </div>
+                                        <div class="col s2">
+                                            <div class="topCatImgHalf row">
+                                                <img class="topImgShad" src="/size_info_img/sale.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col s6">
+                                <div id="promo-man" class="findCat mainCatBlock row">
+                                        <div class="margCatAcsMan col s1">
+                                            <ol><li class="topCatZer">
+                                                MAN
+                                            </li></ol>
+                                            <div class="topCatFirst row">
+                                                <ol><li><a class=" subcategory" id="shoes-promo-man">
+                                                   -30% on shoes 
+                                                </a></li></ol>
+                                            </div>
+                                        </div>
+                                        <div class="col s2">
+                                            <div class="topCatImgHalf row">
+                                                <img class="topImgShad" src="/size_info_img/sale.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                    </div>
+                </li>
+            </ul>
+        </div>   
+        
     </div>
 </div>
-
-  <hr  size="30" color="000000" >       <!-- line -->
-
 </template>

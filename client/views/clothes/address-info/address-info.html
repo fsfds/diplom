@@ -1,0 +1,73 @@
+<template name="addressInfo">
+	<div class="row mrgTop">
+		<div class=" col s8">
+			<form id="clothes-form" class="inputMarg">
+	                <div class=" row">
+	                    <div class="input-field col s8 ">
+	                        <input  id="lastName" type="text" class="validate" pattern="[A-Za-z]{3,}">
+	                        <label  for="lastName" data-error="need more than two letters">Last name</label>  
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="input-field col s8">
+	                        <input id="firstName" type="text" class="validate" pattern="[A-Za-z]{3,}">
+	                        <label for="firstName" data-error="need more than two letters">First name</label>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="input-field col s8">
+	                        <input id="phone" type="text" class="validate" pattern="^[ 0-9]+$">
+	                        <label for="phone" data-error="enter only numbers">Phone</label>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="input-field col s8">
+	                        <input id="country" type="text" class="validate" pattern="[A-Za-z]{3,}">
+	                        <label for="country" >Country</label>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="input-field col s8">
+	                        <input id="city" type="text" class="validate" pattern="[A-Za-z]{3,}">
+	                        <label for="city" >City</label>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="input-field col s8">
+	                        <input id="street" type="text" class="validate" pattern="[A-Za-z0-9/.\s]{6,}">
+	                        <label for="street" data-error="enter type Street 5/54">Address</label>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="input-field col s8">
+	                        <input id="zip" type="text" class="validate" pattern="[0-9]{5,}">
+	                        <label for="zip" data-error="enter only numbers">ZIP</label>
+	                    </div>
+	                </div>
+	                <div class=" row">
+                    <div class="input-field col s8">
+                        <select class="subcategory" id="delivery" >
+                                    <option value="Courier" >
+                                        Courier
+                                    </option>
+                                    <option value="Self-pickup" >
+                                        Self-pickup
+                                    </option>
+              
+                        </select>
+                        <label for="delivery">Delivery type</label>
+                    </div>
+                </div>
+	               
+	        </form>
+		</div>
+		<div class="col s3 ">
+			<div class="addressInfoText">
+				<p>Hello</p> 
+				<p class="txtVisb">q</p> 
+				<p class="">Please fill in all the required fields. Estimated delivery time - 2-3 days. For self-pickup please check our <a class="contactInf" href="">contact info</a>. You can change all your information via phone.</p> 
+				 <button type="button" class="myBtn buy btn btn-info fullbutton" id="buy"  onclick=" Materialize.toast('Thank you for your purchase', 6000, 'rounded')">Verify info</button>
+			</div>
+		</div>
+	</div>
+</template>

@@ -1,0 +1,112 @@
+.infoMainImgSizes{
+	display: block;
+	/*background-color: red;*/
+	height: 500px;
+   	width: 390px;
+   	max-width: 100%;
+	max-height: 100%;
+}
+#parent {position: relative;}
+
+#child {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.imgViev{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	max-height: 100%;
+	margin-bottom: 0%;
+}
+
+.infoSecPhotoBlock{
+	margin-top: 10px;
+	margin-left: -5px;
+	/*margin-left: 125px;*/
+	/*background-color: green;*/
+	vertical-align: top;
+	display: inline-block;
+	height: 160px;
+	width: 125px;
+}
+.infoImageSize{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	max-height: 100%;
+	margin-bottom: 0%;
+}
+.margTopSecPhotoBlock{
+	margin-top:-10px;
+}
+
+.myBtnInfoMenu{/*btn viev*/
+	width: 260px;
+	height: 45px;
+	color:white !important;
+	background-color: black !important;
+	border:2px solid black ;
+}
+.myBtnInfoMenu:hover{
+	color:black !important;
+	background-color: white !important;
+	border:2px solid black;
+	box-shadow: 0 0 0px rgba(0,0,0,0.0);
+	
+}
+.myBtnInfoMenu:active{
+	color:black;
+	background-color: white;
+	border:2px solid black;
+	box-shadow: 0 0 0px rgba(0,0,0,0.0);	
+}
+.underLine{
+	border-bottom-width: 2px; 
+    border-bottom-style: solid; 
+    border-bottom-color: black;
+}
+.star{
+	margin-bottom: -6px;
+	width: 25px;
+	height: 25px;
+}
+.starText{
+	border-bottom-width: 2px;
+    border-bottom-style: solid; 
+    border-bottom-color: black; 
+	margin-left: 10px;
+}
+.materialboxed{
+	max-width: 1000px;
+	max-height: 1000px;
+}
+
+.txtVisb{
+	visibility: hidden;	
+}
+
+/*sizes*/
+.sizeFirst{
+	min-width: 50px !important;
+}
+.sizeSec{
+	min-width: 27px !important;
+}
+.sizes{
+	width: 86% !important;
+}
+.tabs .tab a{
+	color: black !important;
+}
+.tabs .tab a:hover{
+	opacity: 0.5 !important;
+}
+.tabs .indicator {
+  background-color: black !important;
+}
+
+/*sizes*/

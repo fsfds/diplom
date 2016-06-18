@@ -6,4 +6,13 @@
 
 meteor-platform
 iron:router
-twbs:bootstrap
+materialize:materialize
+jquery
+accounts-password
+cfs:standard-packages
+cfs:collection
+cfs:gridfs
+reactive-var
+reywood:publish-composite
+underscore
+juliancwirko:s-alert

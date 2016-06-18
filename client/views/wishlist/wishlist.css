@@ -1,0 +1,49 @@
+.imgWishList{
+   	
+	display: inline-block;
+	margin-left: 87px;
+	margin-bottom: 50px;
+    }
+.imgWishSizes{
+	height: 448px;
+   	width: 348px;
+   	max-width: 100%;
+	max-height: 100%;
+}
+.imgWishViev{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	max-height: 100%;
+	margin-bottom: 0%;
+	z-index: 1;
+}
+
+.textWishViev{
+	font: 14px Verdana;
+	text-decoration:none;
+	margin-top: 10px;
+}
+
+.wishBtn{/*btn viev*/
+	/*position: absolute;*/
+	margin-top: 10px;
+	right: 0px;
+	width: 85px;
+  	height: 27px;
+	color:black ;
+	background-color: white ;
+	border:2px solid black ;
+}
+.wishBtn:hover{
+	color:white ;
+	background-color: black ;
+	border:2px solid black;
+	box-shadow: 0 0 0px rgba(0,0,0,0.0);
+	
+}
+.wishBtn:focus{
+	color:black ;
+	background-color: white ;
+}
+
