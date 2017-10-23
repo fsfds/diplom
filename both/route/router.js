@@ -61,6 +61,10 @@ Router.route('wishlist', {
     }
 });
 
+Router.route('createLook', {
+	path: '/createLook',
+	template: 'createLook'
+});
 
 Router.route('addressInfo', {
 	path: '/addressInfo',

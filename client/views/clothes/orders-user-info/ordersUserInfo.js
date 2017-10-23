@@ -1,8 +1,11 @@
 Template.ordersUserInfo.helpers({
 	qwe:function  () {
 		var clothItem = Clothes.findOne(this.clothID);
+		
 		if (!clothItem){
 			return null;
+			
+
 		}
 		var image = Images.findOne(clothItem.imagesIds[0]);
 		return image ? image.url() : null;
@@ -22,6 +25,7 @@ Template.ordersUserInfo.events({
                 }
             });
            	Router.go("ordersInfo");
+   			
 	}
 	
 })

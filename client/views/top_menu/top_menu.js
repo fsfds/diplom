@@ -38,6 +38,9 @@ Template.TopMenu.events({
 	"click #ordersInfo":function  () {
 			Router.go("ordersInfo")
 	},
+	"click #createLook":function  () {
+			Router.go("createLook")
+	},
 	"click #login":function  () {
 		var parentNode = $('body')[0];
 		Blaze.render(Template.loginModal, parentNode);

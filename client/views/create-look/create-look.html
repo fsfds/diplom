@@ -1,0 +1,81 @@
+<template name="createLook">
+        <div class="mrgTop">
+        <div class="row">
+            <div class="col s4 lookView">   
+                <div class="wordSex">CHOOSE YOUR SEX </div>
+                <!-- <div class="row">
+                        <div class="col s2  opc0"> 
+                                q
+                        </div>
+                        <div class="col s4 sexShoice"> 
+                                <img  class="imgSex"  id="" src="/logo_img/8.svg">
+                                <a class="wordSex" >MAN</a>
+                        </div>
+                        <div class="col s4 sexShoice"> 
+                                <img  class="imgSex"  id="" src="/logo_img/7.svg">
+                                <a class="wordSex">WOMAN </a>
+                        </div>
+                        <div class="col s2  opc0"> 
+                                q
+                        </div>
+
+                </div> -->
+                <div class=" row">
+                    <div class="input-field col s12">
+                        <select class="subcategory" id="category" >
+                                    {{#each allCategories}}
+                                        <option value="{{id}}" selected="{{#if equal id ../clothItem.category}}selected{{/if}}">
+                                        {{label}}
+                                        </option>
+                                    {{/each}}
+                        </select>
+                        <label for="category">Main category</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" input-field col 12">
+                        <select class="subcategory" id="subcategory" >
+                        {{#each allSubcategories}}
+                            <option value="{{id}}" selected="{{#if equal id ../clothItem.subcategory}}selected{{/if}}">
+                                {{label}}
+                            </option>
+                        {{/each}}
+
+                            </select>
+                            <label for="subcategory">Subcategory</label>
+                    </div>
+                 </div>
+               <!--  <div class="wordSex">CHOOSE YOUR CLOTHES </div>
+
+                <div class="wordSex">CHOOSE TYPE CLOTHES </div>
+
+                <div class="wordSex">DOWNLOAD PHOTO </div>
+                <div class=" row">
+                    <div class=" col s12 file-field input-field">
+                        <div class=" myBtn btn">
+                            <span>File</span>
+                            <input type="file" multiple id="image-input">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Upload files">
+                        </div>
+                    </div>
+                </div>
+                <div >
+                    <button type="submit" class="myBtn lookSavePhoto btn btn-info fullbutton " id="">Save</button>
+                    <button type="button" class="myBtn lookDelPhoto btn btn-info fullbutton" id="del">Delete</button>
+                </div> -->
+
+
+            </div>
+            
+            <div class=" col s2 lookView">   
+            qqq
+            </div>
+
+            <div class=" col s6 lookView">   
+            qqq
+            </div>
+        </div>
+        </div>
+</template>
